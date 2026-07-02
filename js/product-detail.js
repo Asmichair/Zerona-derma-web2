@@ -19,6 +19,18 @@ function getProductIdFromUrl() {
 function displayProductDetail() {
   const productId = getProductIdFromUrl();
   const product = allProducts.find(p => p.id === productId);
+  document.getElementById('orderButton').onclick = function() {
+
+  const phoneNumber = "9779802357831"; // Replace with your WhatsApp number
+
+  const message = `Hello Zerona Derma, I would like to order ${product.name}.`;
+
+  const whatsappURL =
+    `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappURL, "_blank");
+
+};
 
   if (!product) {
     document.querySelector('main').innerHTML = '<div class="container" style="padding: 4rem 0; text-align: center;"><h1>Product not found</h1></div>';
@@ -74,7 +86,7 @@ function loadRelatedProducts(currentProductId) {
         <p class="product-desc">${product.shortDesc}</p>
         <div class="product-footer">
           <span class="product-price">$${product.price.toFixed(2)}</span>
-          <a href="products/product.html?id=${product.id}" class="product-link">View Details →</a>
+          <a href="product.html?id=${product.id}" class="product-link">View Details →</a>
         </div>
       </div>
     </article>

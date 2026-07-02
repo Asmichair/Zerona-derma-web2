@@ -681,136 +681,196 @@ ul {
    Footer
    ============================================= */
 
-.footer {
-  background: var(--dark-blue);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 4rem 0 0;
+.footer{
+
+    background:var(--dark-blue);
+    color:white;
+    padding:70px 0 0;
+
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:70px;
+
+    padding-bottom:60px;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
 }
 
-.footer-brand .nav-logo {
-  margin-bottom: 1.25rem;
+.footer-brand{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+    color:white;
+
 }
 
-.footer-brand .nav-logo-text .brand-name {
-  color: var(--white);
+.footer-brand-text{
+
+    max-width:340px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    color:rgba(255,255,255,.75);
+
 }
 
-.footer-brand .nav-logo-text .brand-sub {
-  color: rgba(255, 255, 255, 0.6);
+.subscription-input-group{
+
+    display:flex;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin-bottom:35px;
+
 }
 
-.footer-tagline {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 1rem;
+.subscription-input{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px 18px;
+
+    font-family:var(--font-body);
+
 }
 
-.footer-desc {
-  font-size: 0.875rem;
-  line-height: 1.7;
-  max-width: 300px;
+.subscription-input:focus{
+
+    outline:none;
+
 }
 
-.footer-heading {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 1.25rem;
+.subscription-button{
+
+    border:none;
+
+    background:var(--cyan);
+
+    color:white;
+
+    padding:0 24px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.subscription-button:hover{
+
+    background:var(--medium-blue);
+
 }
 
-.footer-links a {
-  font-size: 0.875rem;
-  transition: color var(--transition);
+.footer-heading{
+
+    margin-bottom:20px;
+
 }
 
-.footer-links a:hover {
-  color: var(--cyan);
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
 }
 
-.footer-faq {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.footer-links a{
+
+    color:rgba(255,255,255,.75);
+
+    transition:.3s;
+
 }
 
-.footer-faq-item {
-  font-size: 0.875rem;
-  line-height: 1.5;
+.footer-links a:hover{
+
+    color:white;
+
+    transform:translateX(4px);
+
 }
 
-.footer-faq-item a {
-  color: rgba(255, 255, 255, 0.8);
-  transition: color var(--transition);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 0.25rem;
+.footer-social{
+
+    display:flex;
+
+    gap:18px;
+
 }
 
-.footer-faq-item a:hover {
-  color: var(--cyan);
-  border-bottom-color: var(--cyan);
+.footer-social a{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    transition:.3s;
+
 }
 
-.footer-social {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+.footer-social a:hover{
+
+    background:var(--cyan);
+
+    transform:translateY(-4px);
+
 }
 
-.footer-social a {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 600;
-  transition: background var(--transition), border-color var(--transition);
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 0;
+
+    color:rgba(255,255,255,.55);
+
+    font-size:.9rem;
+
 }
 
-.footer-social a:hover {
-  background: var(--cyan);
-  border-color: var(--cyan);
-}
+.footer-bottom-links{
 
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 0;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.45);
-}
+    display:flex;
 
-.footer-bottom-links {
-  display: flex;
-  gap: 2rem;
-}
+    gap:35px;
 
-.footer-bottom-links a:hover {
-  color: var(--white);
 }
 
 /* =============================================
