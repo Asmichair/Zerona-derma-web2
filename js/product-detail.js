@@ -52,7 +52,7 @@ function displayProductDetail() {
 
   document.getElementById('detailCategory').textContent = product.category;
   document.getElementById('detailName').textContent = product.name;
-  document.getElementById('detailPrice').textContent = `$${product.price.toFixed(2)}`;
+  document.getElementById('detailPrice').textContent = `Rs. ${product.price.toFixed(2)}`;
   document.getElementById('detailFullDesc').textContent = product.fullDesc;
   document.getElementById('detailUsage').textContent = product.usage;
   document.getElementById('detailIngredients').textContent = product.ingredients;
@@ -85,7 +85,7 @@ function loadRelatedProducts(currentProductId) {
         <h2 class="product-name">${product.name}</h2>
         <p class="product-desc">${product.shortDesc}</p>
         <div class="product-footer">
-          <span class="product-price">$${product.price.toFixed(2)}</span>
+          <span class="product-price">Rs. ${product.price.toFixed(2)}</span>
           <a href="product.html?id=${product.id}" class="product-link">View Details →</a>
         </div>
       </div>

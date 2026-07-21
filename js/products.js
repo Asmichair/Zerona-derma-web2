@@ -24,7 +24,7 @@ function renderProducts(products) {
         <h2 class="product-name">${product.name}</h2>
         <p class="product-desc">${product.shortDesc}</p>
         <div class="product-footer">
-          <span class="product-price">$${product.price.toFixed(2)}</span>
+          <span class="product-price">Rs. ${product.price.toFixed(2)}</span>
           <a href="products/product.html?id=${product.id}" class="product-link">View Details →</a>
         </div>
       </div>
