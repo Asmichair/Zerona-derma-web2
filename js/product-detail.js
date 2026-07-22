@@ -21,7 +21,7 @@ function displayProductDetail() {
   const product = allProducts.find(p => p.id === productId);
   document.getElementById('orderButton').onclick = function() {
 
-  const phoneNumber = "9779802357831"; // Replace with your WhatsApp number
+  const phoneNumber = "9779816967461"; // Replace with your WhatsApp number
 
   const message = `Hello Zerona Derma, I would like to order ${product.name}.`;
 
